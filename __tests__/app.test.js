@@ -25,7 +25,7 @@ describe('app routes', () => {
   });
   it('echoes request body', async () => {
     const response = await request(app).post('/echo').send('echoo');
-    expect(response.statusCode).toEqual('200');
+    expect(response.statusCode).toEqual(200);
     expect(response.text).toEqual('echoo');
   });
 });
